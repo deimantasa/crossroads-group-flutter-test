@@ -4,9 +4,10 @@ class Api {
   static Map<String, String> kHeaderContentJson = {HttpHeaders.contentTypeHeader: "application/json"};
 
 //  =============================
-//  PROJECTS
+//  COMMITS
 //  =============================
-  static String getProject(String projectId) {
-    return "/projects/$projectId";
+  //Hardcoding for now
+  static String getCommits() {
+    return "/repos/zeromaro/crossroads-group-flutter-test/commits";
   }
 }

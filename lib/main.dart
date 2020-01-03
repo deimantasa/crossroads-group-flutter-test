@@ -1,7 +1,13 @@
 import 'package:cr_test/pages/main/main_page.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+import 'env.dart';
+
+void main() {
+  Env.set(kReleaseMode ? Env.prod : Env.dev);
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
